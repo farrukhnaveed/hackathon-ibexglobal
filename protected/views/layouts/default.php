@@ -41,6 +41,9 @@
 
 	<!-- Modernizr JS -->
 	<script src="<?php echo Yii::app()->request->baseUrl?>/static/js/modernizr-2.6.2.min.js"></script>
+	
+	<!-- jQuery -->
+	<script src="<?php echo Yii::app()->request->baseUrl?>/static/js/jquery.min.js"></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="<?php echo Yii::app()->request->baseUrl?>/static/js/respond.min.js"></script>
@@ -57,13 +60,13 @@
 			<div class="top-menu">
 				<div class="row">
 					<div class="col-xs-2">
-						<div id="fh5co-logo"><a href="<?php Yii::app()->createUrl('Site/Index'); ?>">HACKATHON</a></div>
+						<div id="fh5co-logo"><a href="<?php echo Yii::app()->createUrl(''); ?>">HACKATHON</a></div>
 					</div>
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
-							<li class="active"><a href="<?php Yii::app()->createUrl('Site/Index'); ?>">Home</a></li>
-							<li><a href="#">Work</a></li>
-							<li class="has-dropdown">
+							<li id="home" class="menu-li active"><a href="<?php echo Yii::app()->createUrl(''); ?>">Home</a></li>
+							<li id="work" class="menu-li"><a href="#">Work</a></li>
+							<li id="others" class="menu-li has-dropdown">
 								<a href="#">Others</a>
 								<ul class="dropdown">
 									<li><a href="#">Dropdown 1</a></li>
@@ -71,8 +74,8 @@
 									<li><a href="#">Dropdown 3</a></li>
 								</ul>
 							</li>
-							<li><a href="<?php Yii::app()->createUrl('Site/About'); ?>">About</a></li>
-							<li><a href="<?php Yii::app()->createUrl('Site/Contact'); ?>">Contact</a></li>
+							<li id="about" class="menu-li"><a href="<?php echo Yii::app()->createUrl('Site/About'); ?>">About</a></li>
+							<li id="contact" class="menu-li"><a href="<?php echo Yii::app()->createUrl('Site/Contact'); ?>">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -88,38 +91,37 @@
 		<footer id="fh5co-footer" role="contentinfo">
 			<div class="row">
 				<div class="col-md-3 fh5co-widget">
-					<h4>About Neat</h4>
+					<h4>About Hackathon</h4>
 					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
 				</div>
 				<div class="col-md-3 col-md-push-1">
 					<h4>Latest Posts</h4>
 					<ul class="fh5co-footer-links">
-						<li><a href="#">Amazing Templates</a></li>
-						<li><a href="#">100+ Free Download Templates</a></li>
-						<li><a href="#">Neat is now available</a></li>
-						<li><a href="#">Download 1000+ icons</a></li>
-						<li><a href="#">Big Deal for this month of March, Join Us here</a></li>
+						<li><a href="#">Amazing Competition</a></li>
+						<li><a href="#">Competitive teams</a></li>
+						<li><a href="#">Interesting problem</a></li>
+						<li><a href="#">3 hours of work</a></li>
+						<li><a href="#">Great reward</a></li>
 					</ul>
 				</div>
 
 				<div class="col-md-3 col-md-push-1">
 					<h4>Links</h4>
 					<ul class="fh5co-footer-links">
-						<li><a href="#">Home</a></li>
+						<li><a href="<?php echo Yii::app()->createUrl(''); ?>">Home</a></li>
 						<li><a href="#">Work</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">About us</a></li>
+						<li><a href="<?php echo Yii::app()->createUrl('Site/About'); ?>">About us</a></li>
+						<li><a href="<?php echo Yii::app()->createUrl('Site/Contact'); ?>">Contact us</a></li>
 					</ul>
 				</div>
 
 				<div class="col-md-3">
 					<h4>Contact Information</h4>
 					<ul class="fh5co-footer-links">
-						<li>198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-						<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
-						<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-						<li><a href="">gettemplates.co</a></li>
+						<li>IBEX GLOBAL, <br> Lahore, Pakistan</li>
+						<li><a href="tel://+92423111874874">+92 423 111 874 874</a></li>
+						<li><a href="mailto:ibexglobal@mailinator.com">ibexglobal@mailinator.com</a></li>
+						<li><a href="#">ibexglobal.com.pk</a></li>
 					</ul>
 				</div>
 
@@ -128,15 +130,13 @@
 			<div class="row copyright">
 				<div class="col-md-12 text-center">
 					<p>
-						<small class="block">&copy; 2016 Free HTML5. All Rights Reserved.</small> 
-						<small class="block">Designed by <a href="http://freehtml5.co/" target="_blank">FreeHTML5.co</a> Available at <a href="http://themewagon.com/" target="_blank">Themewagon</a> Demo Images: <a href="http://unsplash.co/" target="_blank">Unsplash</a></small>
+						<small class="block">&copy; 2017 Hackathon IBEX GLOBAL. All Rights Reserved.</small> 
 					</p>
 					<p>
 						<ul class="fh5co-social-icons">
-							<li><a href="#"><i class="icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon-linkedin"></i></a></li>
-							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							<li><a href="https://twitter.com/ibexglobalpak"><i class="icon-twitter"></i></a></li>
+							<li><a href="https://www.facebook.com/ibexglobalpak"><i class="icon-facebook"></i></a></li>
+							<li><a href="https://www.linkedin.com/company/9329711/"><i class="icon-linkedin"></i></a></li>
 						</ul>
 					</p>
 				</div>
@@ -149,8 +149,6 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up2"></i></a>
 	</div>
 	
-	<!-- jQuery -->
-	<script src="<?php echo Yii::app()->request->baseUrl?>/static/js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
 	<script src="<?php echo Yii::app()->request->baseUrl?>/static/js/jquery.easing.1.3.js"></script>
 	<!-- Bootstrap -->

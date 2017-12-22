@@ -27,12 +27,12 @@ return array(
     ),
     
     'components' => array(
-    	
+
         'urlManager' => array(
             
             'urlFormat' => 'path',
 		    //'showScriptName'=>false,
-		    'caseSensitive'=>false
+		     'caseSensitive'=>false
         ),
 
 	    'routes' => array(
