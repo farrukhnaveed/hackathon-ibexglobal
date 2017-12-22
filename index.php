@@ -1,7 +1,9 @@
 <?php
 
-// include Yii bootstrap file
-require_once(dirname(__FILE__).'/yii/framework/yii.php');
+// change the following paths if necessary
+$yii=dirname(__FILE__).'/yii/framework/yii.php';
+$config=dirname(__FILE__).'/protected/config/main.php';
 
-// create a Web application instance and run
-Yii::createWebApplication()->run();
+require_once($yii);
+
+Yii::createWebApplication($config)->run();

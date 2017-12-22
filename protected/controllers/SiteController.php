@@ -10,6 +10,20 @@ class SiteController extends CController
 	 */
 	public function actionIndex()
 	{
-		echo 'Hello World';
+		$this->layout='/layouts/default';
+        $this->render('index',array());
+		//echo 'Hello World';
+	}
+
+	public function actionAbout()
+	{
+		$this->layout='/layouts/default';
+        $this->render('about',array());
+	}
+
+	public function actionContact()
+	{
+		$this->layout='/layouts/default';
+        $this->render('contact',array());
 	}
 }
