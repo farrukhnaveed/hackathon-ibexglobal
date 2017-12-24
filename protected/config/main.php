@@ -22,18 +22,21 @@ return array(
                 '::1',
                 'localhost'
             )
-        )
+			),
         
     ),
     
     'components' => array(
-
-        'urlManager' => array(
-            
-            'urlFormat' => 'path',
-		    //'showScriptName'=>false,
-		     'caseSensitive'=>false
-        ),
+		'urlManager' => array(
+			//path is slash separated format aka www.url.com/controller/action/getparam/getvalue
+			'urlFormat'=>'path',
+			'showScriptName'=>false,
+			'caseSensitive'=>true,                     
+			'rules'=>array(
+				//site is your controller, comapny is your action and the name is get variable actionCompany is waiting for.
+				'<name>' => 'site/contact'
+			)
+		),
 
 	    'routes' => array(
 	        // Configures Yii to email all errors and warnings to an email address
