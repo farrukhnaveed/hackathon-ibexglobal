@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Hackathon</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
+	<meta name="description" content="Hackathon Competition IBEX GLOBAL" />
 	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="freehtml5.co" />
 
@@ -41,7 +41,7 @@
 
 	<!-- Modernizr JS -->
 	<script src="<?php echo Yii::app()->request->baseUrl?>/static/js/modernizr-2.6.2.min.js"></script>
-	
+
 	<!-- jQuery -->
 	<script src="<?php echo Yii::app()->request->baseUrl?>/static/js/jquery.min.js"></script>
 	<!-- FOR IE9 below -->
@@ -65,17 +65,6 @@
 					<div class="col-xs-10 text-right menu-1">
 						<ul>
 							<li id="home" class="menu-li active"><a href="<?php echo Yii::app()->createUrl(''); ?>">Home</a></li>
-							<li id="work" class="menu-li"><a href="#">Work</a></li>
-							<li id="others" class="menu-li has-dropdown">
-								<a href="#">Others</a>
-								<ul class="dropdown">
-									<li><a href="#">Dropdown 1</a></li>
-									<li><a href="#">Dropdown 2</a></li>
-									<li><a href="#">Dropdown 3</a></li>
-								</ul>
-							</li>
-							<li id="about" class="menu-li"><a href="<?php echo Yii::app()->createUrl('Site/About'); ?>">About</a></li>
-							<li id="contact" class="menu-li"><a href="<?php echo Yii::app()->createUrl('Site/Contact'); ?>">Contact</a></li>
 						</ul>
 					</div>
 				</div>
@@ -92,7 +81,7 @@
 			<div class="row">
 				<div class="col-md-3 fh5co-widget">
 					<h4>About Hackathon</h4>
-					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
+					<p>Consolidate all the three csv based on EmployeeId and aggregate the “hours worked” field for common EmployeeId (across files or within each file).</p>
 				</div>
 				<div class="col-md-3 col-md-push-1">
 					<h4>Latest Posts</h4>
@@ -109,9 +98,6 @@
 					<h4>Links</h4>
 					<ul class="fh5co-footer-links">
 						<li><a href="<?php echo Yii::app()->createUrl(''); ?>">Home</a></li>
-						<li><a href="#">Work</a></li>
-						<li><a href="<?php echo Yii::app()->createUrl('Site/About'); ?>">About us</a></li>
-						<li><a href="<?php echo Yii::app()->createUrl('Site/Contact'); ?>">Contact us</a></li>
 					</ul>
 				</div>
 
